@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-anqe
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0049-tenant/ci10t-776-0049-app/devfile-sample-anqe@sha256:faabc4d8dba27d5a11002cee0c44080202739bd62af1a213c821e51b393e3c53
+        name: my-nodejs
+        resources: {}
+status: {}
